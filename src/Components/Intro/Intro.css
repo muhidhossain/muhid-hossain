@@ -1,0 +1,70 @@
+.intro-area {
+    margin-top: 200px;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.intro-area p {
+    font-size: 22px;
+    color: aqua;
+    margin-bottom: -10px;
+}
+
+.intro-area h1 {
+    font-size: 78px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    margin-left: -3px;
+}
+
+.intro-area h3 {
+    color: aqua;
+}
+
+.intro-area ul {
+    display: flex;
+    list-style-type: none;
+    margin-left: -38px;
+    margin-bottom: 25px;
+}
+
+.intro-area ul li {
+    position: relative;
+    margin-right: 25px;
+}
+
+.intro-area ul li:before {
+    position: absolute;
+    content: "";
+    left: -16px;
+    top: 10px;
+    background-color: aqua;
+    width: 8px;
+    height: 8px;
+    border-radius: 10px;
+}
+
+.intro-area ul li:first-child:before {
+    display: none;
+}
+
+.resume {
+    background-color: aqua;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-weight: 700;
+    border: 2px solid aqua;
+}
+.about{
+    background-color: black;
+    color: aqua;
+    padding: 15px 25px;
+    border-radius: 4px;
+    border: 2px solid aqua;
+    font-weight: 700;
+    text-decoration: none;
+}
