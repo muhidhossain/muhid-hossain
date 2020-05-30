@@ -120,18 +120,21 @@ const Header = () => {
 
   return (
     <div className={classes.grow}>
-      <AppBar style={{ 
-        background: 'black', 
-        boxShadow: '2px 2px 10px #2b2b2b', 
-        height: '80px', 
-        paddingTop: '8px' 
-        }} 
-        className="header" position="static">
+      <AppBar style={{
+        background: 'black',
+        boxShadow: '0px 10px 20px #2b2b2b',
+        height: '80px',
+        paddingTop: '8px'
+      }}
+        className="header" position="fixed">
         <Toolbar>
           <IconButton
+            style={{ 
+              color: 'aqua',
+              outline: 'none'
+            }}
             edge="start"
             className={classes.menuButton}
-            color="inherit"
             aria-label="open drawer"
           >
             <MenuIcon />
@@ -139,25 +142,13 @@ const Header = () => {
           <img className="logo" src={Logo} alt="" />
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
-            <IconButton aria-label="show 4 new mails" color="inherit">
-              <Badge color="secondary">
+            <a style={{ textDecoration: 'none' }} href="https://github.com/muhidhossain">
+              <IconButton style={{color:'aqua', outline:'none'}}>
                 <FontAwesomeIcon icon={faGithub} />
-              </Badge>
-            </IconButton>
-            <IconButton aria-label="show 17 new notifications" color="inherit">
-              <Badge color="secondary">
-              <FontAwesomeIcon icon={faLinkedinIn} />
-              </Badge>
-            </IconButton>
-            <IconButton
-              edge="end"
-              aria-label="account of current user"
-              aria-controls={menuId}
-              aria-haspopup="true"
-              onClick={handleProfileMenuOpen}
-              color="inherit"
-            >
-              <AccountCircle />
+              </IconButton>
+            </a>
+            <IconButton style={{color:'aqua', outline:'none'}}>
+                <FontAwesomeIcon icon={faLinkedinIn} />
             </IconButton>
           </div>
           <div className={classes.sectionMobile}>

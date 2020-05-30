@@ -1,0 +1,52 @@
+.portfolio-area{
+    color: white;
+    margin-bottom: 160px;
+}
+.portfolio-heading{
+    display: flex;
+    justify-content: center;
+}
+.portfolio-heading h4{
+    box-shadow: 2px 2px 5px aqua;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 160px;
+}
+.portfolio-card{
+    display: flex;
+    justify-content: center;
+}
+.card-details{
+    background-color: #141414;
+    width: 350px;
+    border-radius: 4px;
+}
+.card-details img{
+    height: 200px;
+    width: 350px;
+    border-radius: 4px;
+    filter: grayscale(5);
+    transition: .50s all;
+}
+.card-details:hover img{
+    filter: grayscale(0);
+}
+.card-details div{
+    padding: 20px;
+}
+.card-details h4{
+    font-weight: 700;
+}
+.card-details p{
+    font-size: 18px;
+}
+.card-details a{
+    text-decoration: none;
+    color: white;
+}
+.card-details .gitIcon{
+    font-size: 25px;
+}
+.card-details .gitIcon:hover{
+    color: aqua;
+}

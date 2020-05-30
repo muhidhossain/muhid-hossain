@@ -1,6 +1,6 @@
 .about-area{
     color: white;
-    margin-bottom: 200px;
+    margin-bottom: 160px;
 }
 .about-heading{
     display: flex;
@@ -10,19 +10,34 @@
     box-shadow: 2px 2px 5px aqua;
     padding: 5px 10px;
     border-radius: 10px;
-    margin-bottom: 200px;
+    margin-bottom: 160px;
 }
 .about-profile{
     display: flex;
 }
-.about-profile img{
-    height: 300px;
-    margin-left: 80px;
-    border-radius: 5px;
-    border: 4px solid aqua;
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .about-profile p{
     font-size: 18px;
     line-height: 2;
     margin-left: -15px;
+    margin-bottom: 50px;
+}
+.about-profile .resume{
+    margin-left: -15px;
+}
+.profile img{
+    height: 320px;
+    border-radius: 5px;
+    border: 4px solid aqua;
+    filter: grayscale(5);
+    transition: 1s all;
+    transform: scale(0.95);
+}
+.profile:hover img{
+    transform: scale(1);
+    filter: grayscale(0);
 }

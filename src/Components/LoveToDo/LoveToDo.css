@@ -1,0 +1,33 @@
+.loveToDo-area{
+    color: white;
+    margin-bottom: 180px;
+}
+.loveToDo-heading{
+    display: flex;
+    justify-content: center;
+}
+.loveToDo-heading h4{
+    box-shadow: 2px 2px 5px aqua;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 180px;
+}
+.loveToDo-details{
+    display: flex;
+    justify-content: center;
+}
+.loveToDo-details > *{
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    padding: 40px;
+    margin: 10px;
+    background-color: #141414;
+    color: aqua;
+}
+.loveToDo-details span{
+    font-size: 100px;
+}
+.loveToDo-details h4{
+    font-weight: 800;
+}
