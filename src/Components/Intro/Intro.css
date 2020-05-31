@@ -1,6 +1,6 @@
 .intro-area {
-    margin-top: 280px;
-    color: white;
+    padding-top: 280px;
+    color: #ffffffe0;
     display: flex;
     align-items: center;
     margin-bottom: 200px;
@@ -50,7 +50,7 @@
     display: none;
 }
 
-.resume {
+.resume{
     background-color: aqua;
     padding: 15px 25px;
     text-decoration: none;
@@ -58,6 +58,7 @@
     margin-right: 10px;
     font-weight: 700;
     border: 2px solid aqua;
+    outline: none !important;
 }
 .about{
     background-color: black;
@@ -67,4 +68,5 @@
     border: 2px solid aqua;
     font-weight: 700;
     text-decoration: none;
+    outline: none !important;
 }

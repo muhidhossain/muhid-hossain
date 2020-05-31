@@ -11,8 +11,8 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import Logo from '../../images/logo.png';
 import './Header.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -122,7 +122,6 @@ const Header = () => {
     <div className={classes.grow}>
       <AppBar style={{
         background: 'black',
-        boxShadow: '0px 10px 20px #2b2b2b',
         height: '80px',
         paddingTop: '8px'
       }}

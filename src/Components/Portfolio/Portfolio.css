@@ -1,6 +1,6 @@
 .portfolio-area{
-    color: white;
-    margin-bottom: 160px;
+    color: #ffffffe0;
+    margin-bottom: 120px;
 }
 .portfolio-heading{
     display: flex;
@@ -10,7 +10,7 @@
     box-shadow: 2px 2px 5px aqua;
     padding: 5px 10px;
     border-radius: 10px;
-    margin-bottom: 160px;
+    margin-bottom: 120px;
 }
 .portfolio-card{
     display: flex;
@@ -48,5 +48,12 @@
     font-size: 25px;
 }
 .card-details .gitIcon:hover{
+    color: aqua;
+}
+.card-details .linkIcon{
+    font-size: 23px;
+    margin-left: 10px;
+}
+.card-details .linkIcon:hover{
     color: aqua;
 }
