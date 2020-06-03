@@ -6,7 +6,6 @@ const Skills = () => {
     const selectedName = Object.keys(skills)
     const [selectedType, setSelectedType] = useState(selectedName[0]);
     const selectedSkill = skills[selectedType];
-    console.log(selectedSkill);
 
 
     return (
