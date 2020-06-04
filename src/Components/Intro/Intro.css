@@ -9,13 +9,13 @@
 .intro-area p {
     font-size: 22px;
     color: aqua;
-    margin-bottom: -10px;
+    margin-bottom: 0;
 }
 
 .intro-area h1 {
     font-size: 78px;
     font-weight: 900;
-    margin-bottom: 15px;
+    margin-bottom: 0;
     margin-left: -3px;
 }
 
@@ -61,7 +61,7 @@
     outline: none !important;
 }
 .about{
-    background-color: black;
+    background-color: #000f0f;
     color: aqua;
     padding: 15px 25px;
     border-radius: 4px;
@@ -69,4 +69,69 @@
     font-weight: 700;
     text-decoration: none;
     outline: none !important;
+}
+
+@media only screen and (max-width: 991px){
+    .intro-area h1{
+        font-size: 62px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .intro-area{
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 210px;
+    }
+    .intro-area p{
+        font-size: 21px;
+    }
+    .intro-area h1{
+        font-size: 52px;
+        margin-left: 0;
+    }
+    .intro-area h3{
+        font-size: 22px;
+    }
+    .intro-area ul{
+        justify-content: center;
+        margin-left: -12px;
+    }
+    .intro-area ul li {
+        font-size: 16px;
+    }
+    .resume{
+        padding: 10px 20px;
+    }
+    .about{
+        padding: 10px 20px;
+    }
+}
+
+@media only screen and  (max-width: 481px){
+    .intro-area{
+        padding-top: 220px;
+    }
+    .intro-area p{
+        font-size: 18px;
+    }
+    .intro-area h1{
+        font-size: 36px;
+    }
+    .intro-area h3{
+        font-size: 20px;
+    }
+    .intro-area ul{
+        flex-direction: column;
+    }
+    .intro-area ul li{
+        font-size: 14px;
+    }
+    .intro-area ul li:before{
+        display: none;
+    }
+    .intro-area ul{
+        margin-left: 0;
+    }
 }

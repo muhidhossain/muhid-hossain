@@ -10,16 +10,14 @@ const Footer = () => {
     return (
         <div className="footer-area">
             <div>
-                <small>Copyright © {year}</small>
+               <small>Copyright © {year}</small>
             </div>
             <div className="social-icon">
                 <FontAwesomeIcon icon={faFacebookSquare} />
                 <FontAwesomeIcon className="instagram-icon" icon={faInstagram} />
                 <FontAwesomeIcon icon={faTwitter} />
             </div>
-            <div>
-                <p>Developed by ME</p>
-            </div>
+            <p>Developed by ME</p>
         </div>
     );
 };

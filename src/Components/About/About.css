@@ -41,3 +41,27 @@
     transform: scale(1);
     filter: grayscale(0);
 }
+
+@media only screen and (max-width: 768px){
+    .about-area{
+        margin-bottom: 100px;
+    }
+    .about-profile{
+        text-align: center;
+        padding-right: 0px;
+        flex-direction: column-reverse;
+    }
+    .about-profile > *{
+        flex: 1 1 100%;
+    }
+    .about-profile p{
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+    .about-profile .resume{
+        margin-left: 0;
+    }
+    .about-heading h4{
+        margin-bottom: 100px;
+    }
+}

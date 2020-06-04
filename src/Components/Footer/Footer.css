@@ -4,7 +4,7 @@
     align-items: center;
     height: 150px;
     color: #ffffffe0;
-    background-color: #000000d0;
+    background-color: #0a1a22;
 }
 .social-icon > *{
     margin: 0px 5px;
@@ -24,4 +24,7 @@
 }
 .social-icon > *:nth-child(3):hover{
     color: #00acee;
+}
+.footer-area p{
+    padding-top: 15px;
 }

@@ -84,3 +84,42 @@
     margin-right: 0;
     flex: 0 0 calc(50% - 15px);
 }
+
+@media only screen and (max-width: 768px){
+    .skills{
+        margin-left: 0;
+    }
+    .skill-nav{
+        justify-content: center;
+    }
+    .skill > *{
+        flex: 1 1 100%;
+    }
+    .skill .card{
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .skill > *:last-child{
+        flex-basis: 100%;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 481px){
+    .skills-area{
+        margin-bottom: 100px;
+    }
+    .skill-nav{
+        margin-bottom: 0;
+    }
+    .skill-nav li{
+        margin: 0 5px;
+        margin-bottom: 15px;
+    }
+    .skill .card{
+        margin-bottom: 15px;
+    }
+    .skills-heading h4{
+        margin-bottom: 100px;
+    }
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import './LoveToDo.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlaneDeparture, faCamera } from '@fortawesome/free-solid-svg-icons'
+import { faPlaneDeparture, faCamera, faBiking } from '@fortawesome/free-solid-svg-icons'
 import SportsCricketIcon from '@material-ui/icons/SportsCricket';
 
 const LoveToDo = () => {
@@ -28,6 +28,12 @@ const LoveToDo = () => {
                         <SportsCricketIcon style={{ fontSize: 100 }} />
                     </span>
                     <h4>Playing Cricket</h4>
+                </div>
+                <div>
+                    <span>
+                        <FontAwesomeIcon icon={faBiking} />
+                    </span>
+                    <h4>Riding Bike</h4>
                 </div>
             </div>
         </div>

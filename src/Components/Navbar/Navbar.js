@@ -1,18 +1,20 @@
 import React, { useState } from 'react';
 import './Navbar.css'
-import { useScrollTrigger, Slide, AppBar, Toolbar, IconButton, makeStyles, Divider, List, ListItem, ListItemIcon, ListItemText, Hidden, Drawer, useTheme, Menu, MenuItem } from '@material-ui/core';
+import { useScrollTrigger, Slide, AppBar, Toolbar, IconButton, makeStyles, Divider, List, ListItem, ListItemText, Hidden, Drawer, useTheme, Menu, MenuItem } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import Logo from '../../images/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedinIn, faMediumM } from '@fortawesome/free-brands-svg-icons';
 
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
     toolbar: theme.mixins.toolbar,
+    listItemText: {
+        fontSize: '18px',
+        fontWeight: '900'
+    },
     grow: {
         flexGrow: 1,
     },
@@ -86,14 +88,25 @@ const Navbar = (props) => {
         >
             <div style={{ backgroundColor: "aqua", margin: "-8px 0px", }}>
                 <MenuItem>
-                    <IconButton color="inherit">
-                        <FontAwesomeIcon icon={faGithub} />
-                    </IconButton>
+                    <a target="blank" href="https://github.com/muhidhossain">
+                        <IconButton style={{ color: "black", outline: "none" }}>
+                            <FontAwesomeIcon icon={faGithub} />
+                        </IconButton>
+                    </a>
                 </MenuItem>
                 <MenuItem>
-                    <IconButton color="inherit">
-                        <FontAwesomeIcon icon={faLinkedinIn} />
-                    </IconButton>
+                    <a target="blank" href="https://www.linkedin.com/in/muhidhossain">
+                        <IconButton style={{ color: "black", outline: "none" }}>
+                            <FontAwesomeIcon icon={faLinkedinIn} />
+                        </IconButton>
+                    </a>
+                </MenuItem>
+                <MenuItem>
+                    <a target="blank" href="https://medium.com/@muhidhossain7">
+                        <IconButton style={{ color: "black", outline: "none" }}>
+                            <FontAwesomeIcon icon={faMediumM} />
+                        </IconButton>
+                    </a>
                 </MenuItem>
             </div>
         </Menu>
@@ -104,10 +117,9 @@ const Navbar = (props) => {
             <div className={classes.toolbar} />
             <Divider />
             <List>
-                {['GitHub', 'Started', 'Send email', 'Drafts'].map((text, index) => (
+                {['ABOUT ME', 'MY SKILLS', 'LOVE TO DO', 'PORTFOLIO', 'CONTACT'].map((text, index) => (
                     <ListItem button key={text}>
-                        <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                        <ListItemText primary={text} />
+                        <ListItemText classes={{ primary: classes.listItemText }} style={{ padding: "0px 30px", }} primary={text} />
                     </ListItem>
                 ))}
             </List>
@@ -120,7 +132,7 @@ const Navbar = (props) => {
         <div className={classes.grow}>
             <div>
                 <HideOnScroll {...props}>
-                    <AppBar style={{ backgroundColor: "black", height: "80px", padding: "10px 0px" }}>
+                    <AppBar style={{ backgroundColor: "#000f0f", height: "80px", padding: "10px 0px" }}>
                         <Toolbar>
                             <IconButton
                                 style={{ outline: "none", color: "aqua" }}
@@ -132,17 +144,28 @@ const Navbar = (props) => {
                             >
                                 <MenuIcon style={{ fontSize: "35px" }} />
                             </IconButton>
-                            <img className="logo" src={Logo} alt="" />
+                            <a href="https://muhid-hossain.web.app">
+                                <IconButton style={{ outline: 'none' }}>
+                                    <img className="logo" src={Logo} alt="" />
+                                </IconButton>
+                            </a>
                             <div className={classes.grow} />
                             <div className={classes.sectionDesktop}>
-                                <a style={{ textDecoration: 'none' }} href="https://github.com/muhidhossain">
+                                <a target="blank" href="https://github.com/muhidhossain">
                                     <IconButton style={{ color: 'aqua', outline: 'none' }}>
                                         <FontAwesomeIcon icon={faGithub} />
                                     </IconButton>
                                 </a>
-                                <IconButton style={{ color: 'aqua', outline: 'none' }}>
-                                    <FontAwesomeIcon icon={faLinkedinIn} />
-                                </IconButton>
+                                <a target="blank" href="https://www.linkedin.com/in/muhidhossain">
+                                    <IconButton style={{ color: 'aqua', outline: 'none' }}>
+                                        <FontAwesomeIcon icon={faLinkedinIn} />
+                                    </IconButton>
+                                </a>
+                                <a target="blank" href="https://medium.com/@muhidhossain7">
+                                    <IconButton style={{ color: "aqua", outline: "none" }}>
+                                        <FontAwesomeIcon icon={faMediumM} />
+                                    </IconButton>
+                                </a>
                             </div>
                             <div className={classes.sectionMobile}>
                                 <IconButton

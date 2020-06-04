@@ -36,8 +36,7 @@ const Skills = () => {
                             <p>{percent}%</p>
                             <div style={{ width: percent + "%" }} className="progress-ar"></div>
                         </div>
-                    )
-                    )
+                    ))
                 }
             </div>
         </div>
