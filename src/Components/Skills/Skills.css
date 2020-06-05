@@ -86,8 +86,14 @@
 }
 
 @media only screen and (max-width: 768px){
+    .skills-area{
+        margin-bottom: 100px;
+    }
     .skills{
         margin-left: 0;
+    }
+    .skills-heading h4{
+        margin-bottom: 100px;
     }
     .skill-nav{
         justify-content: center;

@@ -1,3 +1,9 @@
 .logo{
     height: 50px;
 }
+.drawer-btn p{
+    padding: 0px 30px;
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 15px;
+}

@@ -6,6 +6,7 @@ import MoreIcon from '@material-ui/icons/MoreVert';
 import Logo from '../../images/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedinIn, faMediumM } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 const drawerWidth = 240;
 
@@ -116,12 +117,32 @@ const Navbar = (props) => {
         <div>
             <div className={classes.toolbar} />
             <Divider />
-            <List>
-                {['ABOUT ME', 'MY SKILLS', 'LOVE TO DO', 'PORTFOLIO', 'CONTACT'].map((text, index) => (
-                    <ListItem button key={text}>
-                        <ListItemText classes={{ primary: classes.listItemText }} style={{ padding: "0px 30px", }} primary={text} />
+            <List className="drawer-btn">
+                <a style={{ textDecoration: "none", color: "black" }} href="/about">
+                    <ListItem button>
+                        <p>ABOUT ME</p>
                     </ListItem>
-                ))}
+                </a>
+                <a style={{ textDecoration: "none", color: "black" }} href="/mySkills">
+                    <ListItem button>
+                        <p>MY SKILLS</p>
+                    </ListItem>
+                </a>
+                <a style={{ textDecoration: "none", color: "black" }} href="/loveToDo">
+                    <ListItem button>
+                        <p>LOVE TO DO</p>
+                    </ListItem>
+                </a>
+                <a style={{ textDecoration: "none", color: "black" }} href="/portfolio">
+                    <ListItem button>
+                        <p>PORTFOLIO</p>
+                    </ListItem>
+                </a>
+                <a style={{ textDecoration: "none", color: "black" }} href="/contact">
+                    <ListItem button>
+                        <p>CONTACT</p>
+                    </ListItem>
+                </a>
             </List>
         </div>
     )
@@ -144,11 +165,11 @@ const Navbar = (props) => {
                             >
                                 <MenuIcon style={{ fontSize: "35px" }} />
                             </IconButton>
-                            <a href="https://muhid-hossain.web.app">
+                            <Link to="/">
                                 <IconButton style={{ outline: 'none' }}>
                                     <img className="logo" src={Logo} alt="" />
                                 </IconButton>
-                            </a>
+                            </Link>
                             <div className={classes.grow} />
                             <div className={classes.sectionDesktop}>
                                 <a target="blank" href="https://github.com/muhidhossain">

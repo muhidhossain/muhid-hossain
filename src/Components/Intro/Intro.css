@@ -127,6 +127,7 @@
     }
     .intro-area ul li{
         font-size: 14px;
+        margin-left: -15px;
     }
     .intro-area ul li:before{
         display: none;

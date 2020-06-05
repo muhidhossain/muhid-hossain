@@ -1,5 +1,5 @@
 import React from 'react';
-import './Intro.css'
+import './Intro.css';
 
 const Intro = () => {
     return (
@@ -15,7 +15,9 @@ const Intro = () => {
                     <li>Programer</li>
                 </ul>
                 <button className='resume'>Get Resume</button>
-                <button className='about'>About Me</button>
+                <a href="/about">
+                    <button className='about'>About Me</button>
+                </a>
             </div>
         </div>
     );
