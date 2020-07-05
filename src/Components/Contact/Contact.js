@@ -19,7 +19,7 @@ const Contact = () => {
                     </div>
                     <div>
                         <h3>Phone</h3>
-                        <p>+8801791127463 <small>(Bangladesh)</small></p>
+                        <p>+8809638164898<small>(Bangladesh)</small></p>
                     </div>
                     <div>
                         <h3>Address</h3>
