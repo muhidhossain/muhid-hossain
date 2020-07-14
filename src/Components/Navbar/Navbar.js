@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import './Navbar.css'
-import { useScrollTrigger, Slide, AppBar, Toolbar, IconButton, makeStyles, Divider, List, ListItem, ListItemText, Hidden, Drawer, useTheme, Menu, MenuItem } from '@material-ui/core';
+import { useScrollTrigger, Slide, AppBar, Toolbar, IconButton, makeStyles, Divider, List, ListItem, Hidden, Drawer, useTheme, Menu, MenuItem } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import Logo from '../../images/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedinIn, faMediumM } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
+import FullHeight from "react-full-height";
 
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
-    toolbar: theme.mixins.toolbar,
     listItemText: {
         fontSize: '18px',
         fontWeight: '900'
@@ -114,37 +114,43 @@ const Navbar = (props) => {
     );
 
     const drawer = (
-        <div>
-            <div className={classes.toolbar} />
-            <Divider />
-            <List className="drawer-btn">
-                <a style={{ textDecoration: "none", color: "black" }} href="/about">
-                    <ListItem button>
-                        <p>ABOUT ME</p>
-                    </ListItem>
-                </a>
-                <a style={{ textDecoration: "none", color: "black" }} href="/mySkills">
-                    <ListItem button>
-                        <p>MY SKILLS</p>
-                    </ListItem>
-                </a>
-                <a style={{ textDecoration: "none", color: "black" }} href="/loveToDo">
-                    <ListItem button>
-                        <p>LOVE TO DO</p>
-                    </ListItem>
-                </a>
-                <a style={{ textDecoration: "none", color: "black" }} href="/portfolio">
-                    <ListItem button>
-                        <p>PORTFOLIO</p>
-                    </ListItem>
-                </a>
-                <a style={{ textDecoration: "none", color: "black" }} href="/contact">
-                    <ListItem button>
-                        <p>CONTACT</p>
-                    </ListItem>
-                </a>
-            </List>
-        </div>
+        <FullHeight className="sectionDrawer">
+            <div>
+                <Link className="drawerLogoLink" to="/">
+                    <IconButton style={{ outline: 'none' }}>
+                        <img className="drawerLogo" src={Logo} alt="" />
+                    </IconButton>
+                </Link>
+                <Divider style={{ backgroundColor: "black" }} />
+                <List className="drawer-btn">
+                    <a style={{ textDecoration: "none", color: "black" }} href="/about">
+                        <ListItem button>
+                            <p>ABOUT ME</p>
+                        </ListItem>
+                    </a>
+                    <a style={{ textDecoration: "none", color: "black" }} href="/mySkills">
+                        <ListItem button>
+                            <p>MY SKILLS</p>
+                        </ListItem>
+                    </a>
+                    <a style={{ textDecoration: "none", color: "black" }} href="/loveToDo">
+                        <ListItem button>
+                            <p>LOVE TO DO</p>
+                        </ListItem>
+                    </a>
+                    <a style={{ textDecoration: "none", color: "black" }} href="/portfolio">
+                        <ListItem button>
+                            <p>PORTFOLIO</p>
+                        </ListItem>
+                    </a>
+                    <a style={{ textDecoration: "none", color: "black" }} href="/contact">
+                        <ListItem button>
+                            <p>CONTACT</p>
+                        </ListItem>
+                    </a>
+                </List>
+            </div>
+        </FullHeight>
     )
 
     const container = window !== undefined ? () => window().document.body : undefined;

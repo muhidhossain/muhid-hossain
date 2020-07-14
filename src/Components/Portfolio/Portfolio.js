@@ -1,6 +1,5 @@
 import React from 'react';
 import './Portfolio.css';
-import portfolio1 from '../../images/portfolio/portfolio1.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
@@ -13,7 +12,7 @@ const Portfolio = () => {
             </div>
             <div className="portfolio-card">
                 <div className="card-details">
-                    <img src={portfolio1} alt="" />
+                <iframe title="red-onion-restaurant" src="https://www.youtube.com/embed/6XGTU6Zzv8k" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     <div>
                         <a href="https://red-onion-food1.web.app"><h4>Red Onion</h4></a>
                         <p>A restaurant web application with firebase authentication. Ordering food is available but delivery process is closed now.</p>

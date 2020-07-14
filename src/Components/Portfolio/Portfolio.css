@@ -21,14 +21,14 @@
     width: 350px;
     border-radius: 4px;
 }
-.card-details img{
+.card-details iframe{
     height: 200px;
     width: 350px;
     border-radius: 4px;
     filter: grayscale(5);
     transition: .50s all;
 }
-.card-details:hover img{
+.card-details:hover iframe{
     filter: grayscale(0);
 }
 .card-details div{

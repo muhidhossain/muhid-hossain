@@ -7,3 +7,14 @@
     font-weight: 700;
     padding-top: 15px;
 }
+.sectionDrawer{
+    background-color: aqua;
+}
+.sectionDrawer .drawerLogo{
+    height: 50px;
+    margin: 4px 0;
+}
+.sectionDrawer .drawerLogoLink{
+    display: flex;
+    justify-content: center;
+}
