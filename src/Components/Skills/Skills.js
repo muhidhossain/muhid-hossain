@@ -16,14 +16,8 @@ const Skills = () => {
             <div className="skills">
                 <nav>
                     <ul className="nav skill-nav">
-                        <li onClick={() => setSelectedType("Web")} className={selectedType === "Web" ? "active" : "deactivate"}>
-                            <span>Web</span>
-                        </li>
-                        <li onClick={() => setSelectedType("Programming")} className={selectedType === "Programming" ? "active" : "deactivate"}>
-                            <span>Programing</span>
-                        </li>
-                        <li onClick={() => setSelectedType("Tools")} className={selectedType === "Tools" ? "active" : "deactivate"}>
-                            <span>Tools</span>
+                        <li onClick={() => setSelectedType("Skills")} className={selectedType === "Skills" ? "active" : "deactivate"}>
+                            <span>Skills</span>
                         </li>
                     </ul>
                 </nav>
