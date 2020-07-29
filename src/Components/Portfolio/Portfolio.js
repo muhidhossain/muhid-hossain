@@ -1,8 +1,9 @@
 import React from 'react';
 import './Portfolio.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import { CardDeck, Card } from 'react-bootstrap';
 
 const Portfolio = () => {
     return (
@@ -10,21 +11,42 @@ const Portfolio = () => {
             <div className="portfolio-heading">
                 <h4>PORTFOLIO</h4>
             </div>
-            <div className="portfolio-card">
-                <div className="card-details">
-                <iframe title="red-onion-restaurant" src="https://www.youtube.com/embed/6XGTU6Zzv8k" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                    <div>
-                        <a href="https://red-onion-food1.web.app"><h4>Red Onion</h4></a>
-                        <p>A restaurant web application with firebase authentication. Ordering food is available but delivery process is closed now.</p>
-                        <a href="https://github.com/muhidhossain/red-onion-restaurant">
+            <CardDeck className="portfolios">
+                <Card className="col-md-4 card-details">
+                    <iframe title="red-onion-restaurant" src="https://www.youtube.com/embed/6XGTU6Zzv8k" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <Card.Body>
+                        <a target="blank" href="https://red-onion-food1.web.app"><h4>Red Onion Restaurant</h4></a>
+                        <Card.Text>
+                            A restaurant web application build with React JS. Ordering food is available but delivery process is closed now.
+                        </Card.Text>
+                    </Card.Body>
+                    <Card.Footer>
+                        <a target="blank" href="https://github.com/muhidhossain/red-onion-restaurant">
                             <FontAwesomeIcon className="gitIcon" icon={faGithub} />
                         </a>
-                        <a href="https://red-onion-food1.web.app">
+                        <a target="blank" href="https://red-onion-food1.web.app">
                             <FontAwesomeIcon className="linkIcon" icon={faExternalLinkAlt} />
                         </a>
-                    </div>
-                </div>
-            </div>
+                    </Card.Footer>
+                </Card>
+                <Card className="col-md-4 card-details">
+                    <iframe title="doctors-portal" width="560" height="315" src="https://www.youtube.com/embed/9BWuy9JSA-4" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <Card.Body>
+                        <a target="blank" href="https://doctors-portal-visit.web.app"><h4>Doctor's Portal</h4></a>
+                        <Card.Text>
+                            Web application for taking care for your teeth. Make your appointment now. We will take care of your precious smile.
+                        </Card.Text>
+                    </Card.Body>
+                    <Card.Footer>
+                        <a target="blank" href="https://github.com/muhidhossain/doctors-portal-app">
+                            <FontAwesomeIcon className="gitIcon" icon={faGithub} />
+                        </a>
+                        <a target="blank" href="https://doctors-portal-visit.web.app">
+                            <FontAwesomeIcon className="linkIcon" icon={faExternalLinkAlt} />
+                        </a>
+                    </Card.Footer>
+                </Card>
+            </CardDeck>
         </div>
     );
 };

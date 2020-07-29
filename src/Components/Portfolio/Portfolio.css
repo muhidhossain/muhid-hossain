@@ -1,3 +1,8 @@
+.portfolios{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 .portfolio-area{
     color: #ffffffe0;
     margin-bottom: 120px;
@@ -12,27 +17,20 @@
     border-radius: 10px;
     margin-bottom: 120px;
 }
-.portfolio-card{
-    display: flex;
-    justify-content: center;
-}
 .card-details{
     background-color: #1d293a;
-    width: 350px;
     border-radius: 4px;
+    padding: 0;
 }
 .card-details iframe{
     height: 200px;
-    width: 350px;
+    width: 100%;
     border-radius: 4px;
     filter: grayscale(5);
     transition: .50s all;
 }
 .card-details:hover iframe{
     filter: grayscale(0);
-}
-.card-details div{
-    padding: 20px;
 }
 .card-details h4{
     font-weight: 700;
