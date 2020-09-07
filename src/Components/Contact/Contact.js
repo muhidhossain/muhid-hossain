@@ -1,5 +1,6 @@
 import React from 'react';
 import './Contact.css'
+import { Button } from '@material-ui/core';
 
 const Contact = () => {
     return (
@@ -9,8 +10,8 @@ const Contact = () => {
             </div>
             <div className="contact-details">
                 <div className="col-md-6">
-                    <p>Although I am currently studying for my bachelor's degree I will be free from January 2020. And I am interested in working with any company from January 2020 that thinks my skill will be helpful for them. If you are looking for someone like me, please let me know. Or you can just 'say hi' to me.</p>
-                    <button className="resume">Contact Me</button>
+                    <p>Although I am currently studying for my bachelor's degree I will be free from January 2022. And I am interested in working with any company from January 2022 that thinks my skill will be helpful for them. If you are looking for someone like me, please let me know. Or you can just 'say hi' to me.</p>
+                    <Button id="resume">Contact Me</Button>
                 </div>
                 <div className="col-md-6 contact-info">
                     <div>

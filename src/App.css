@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
 .my-portfolio {
   background-color: #000f0f;
+  font-family: 'Roboto', sans-serif;
 }

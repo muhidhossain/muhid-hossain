@@ -50,25 +50,25 @@
     display: none;
 }
 
-.resume{
+#resume{
     background-color: aqua;
     padding: 15px 25px;
     text-decoration: none;
     border-radius: 4px;
     margin-right: 10px;
-    font-weight: 700;
+    font-weight: 900;
     border: 2px solid aqua;
-    outline: none !important;
+    outline: none;
 }
-.about{
+#about{
     background-color: #000f0f;
     color: aqua;
     padding: 15px 25px;
     border-radius: 4px;
     border: 2px solid aqua;
-    font-weight: 700;
+    font-weight: 900;
     text-decoration: none;
-    outline: none !important;
+    outline: none;
 }
 
 @media only screen and (max-width: 991px){
