@@ -12,7 +12,7 @@ const About = () => {
                 </div>
                 <div className="about-profile">
                     <div className='col-md-6'>
-                        <p>Hello! I'm Muhid Hossain, a passionate web developer. I develop web applications. My core skill is based on JavaScript and I love to do most of the things using JavaScript. I love to make the web more open to the world. I am currently pursuing my bachelor's degree at University of Barishal, Barishal, Bangladesh(2nd Year). I am available for any good job opportunities.</p>
+                        <p>Hello! I am Muhid Hossain, a right brained front end developer. I develop web application and currently learning data analytics with Python. Though I am learning Python, JavaScript is my first love. I like to work with JavaScript.</p>
                         <Button id='resume'>Get Resume</Button>
                         <a style={{textDecoration: 'none'}} href="mySkills">
                             <Button id='about'>My Skills</Button>

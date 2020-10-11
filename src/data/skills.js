@@ -1,15 +1,18 @@
 const skills = {
     Skills: [
-      { name: "HTML", percent: 90 },
-      { name: "CSS", percent: 80},
       { name: "JavaScript", percent: 80 },
       { name: "React", percent: 80 },
-      { name: "Bootstrap", percent: 80},
-      { name: "Git", percent: 70 },
+      { name: "Node JS", percent: 60 },
+      { name: "HTML5", percent: 90 },
+      { name: "CSS3", percent: 90},
+      { name: "Git", percent: 80 },
+      { name: "Material-UI", percent: 80},
       { name: "Firebase", percent: 70},
-      { name: "Material-UI", percent: 70},
+      { name: "Bootstrap 5", percent: 90},
       { name: "MongoDB", percent: 70 },
-      { name: "Node JS", percent: 60 }
+      { name: "Stripe", percent: 70 },
+      { name: "Python", percent: 30 },
+      { name: "Anaconda", percent: 20 }
     ],
     Others: [
       { name: "React Native", percent: 85 },
