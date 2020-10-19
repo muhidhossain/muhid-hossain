@@ -1,7 +1,6 @@
 .portfolios{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 .portfolio-area{
     color: #ffffffe0;
@@ -54,4 +53,14 @@
 }
 .card-details .linkIcon:hover{
     color: aqua;
+}
+
+@media (max-width: 991px) {
+    .portfolios{
+        display: block;
+    }
+
+    .portfolios > .card-details{
+        margin-bottom: 20px;
+    }
 }

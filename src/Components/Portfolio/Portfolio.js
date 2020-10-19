@@ -12,7 +12,24 @@ const Portfolio = () => {
                 <h4>PORTFOLIO</h4>
             </div>
             <CardDeck className="portfolios">
-                <Card className="col-md-4 card-details">
+                <Card className="card-details">
+                    <iframe title="power-x-gym" width="560" height="315" src="https://www.youtube.com/embed/bzFNgUvB2dQ" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <Card.Body>
+                        <a target="blank" href="https://power--x--gym.web.app"><h4>Power X Gym</h4></a>
+                        <Card.Text>
+                            Developed with most popular JavaScript framework React JS. Accept payment with Stripe and PayPal.
+                        </Card.Text>
+                    </Card.Body>
+                    <Card.Footer>
+                        <a target="blank" href="https://github.com/muhidhossain/powerxgym">
+                            <FontAwesomeIcon className="gitIcon" icon={faGithub} />
+                        </a>
+                        <a target="blank" href="https://power--x--gym.web.app">
+                            <FontAwesomeIcon className="linkIcon" icon={faExternalLinkAlt} />
+                        </a>
+                    </Card.Footer>
+                </Card>
+                <Card className="card-details">
                     <iframe title="red-onion-restaurant" src="https://www.youtube.com/embed/6XGTU6Zzv8k" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     <Card.Body>
                         <a target="blank" href="https://red-onion-food1.web.app"><h4>Red Onion Restaurant</h4></a>
@@ -29,7 +46,7 @@ const Portfolio = () => {
                         </a>
                     </Card.Footer>
                 </Card>
-                <Card className="col-md-4 card-details">
+                <Card className="card-details">
                     <iframe title="doctors-portal" width="560" height="315" src="https://www.youtube.com/embed/9BWuy9JSA-4" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     <Card.Body>
                         <a target="blank" href="https://doctors-portal-visit.web.app"><h4>Doctor's Portal</h4></a>

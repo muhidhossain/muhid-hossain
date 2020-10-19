@@ -50,7 +50,7 @@
     display: none;
 }
 
-#resume{
+#resume {
     background-color: aqua;
     padding: 15px 25px;
     text-decoration: none;
@@ -60,7 +60,8 @@
     border: 2px solid aqua;
     outline: none;
 }
-#about{
+
+#about {
     background-color: #000f0f;
     color: aqua;
     padding: 15px 25px;
@@ -71,68 +72,72 @@
     outline: none;
 }
 
-@media only screen and (max-width: 991px){
-    .intro-area h1{
+@media only screen and (max-width: 991px) {
+    .intro-area h1 {
         font-size: 62px;
     }
 }
 
-@media only screen and (max-width: 768px){
-    .intro-area{
+@media only screen and (max-width: 768px) {
+    .intro-area {
         justify-content: center;
         text-align: center;
         margin-top: 20px;
         margin-bottom: 210px;
     }
-    .intro-area p{
+    .intro-area p {
         font-size: 21px;
     }
-    .intro-area h1{
+    .intro-area h1 {
         font-size: 52px;
         margin-left: 0;
     }
-    .intro-area h3{
+    .intro-area h3 {
         font-size: 22px;
     }
-    .intro-area ul{
+    .intro-area ul {
         justify-content: center;
         margin-left: -12px;
     }
     .intro-area ul li {
         font-size: 16px;
     }
-    .resume{
+    .resume {
         padding: 10px 20px;
     }
-    .about{
+    .about {
         padding: 10px 20px;
     }
 }
 
-@media only screen and  (max-width: 481px){
-    .intro-area{
+@media only screen and (max-width: 481px) {
+    .intro-area {
         padding-top: 220px;
     }
-    .intro-area p{
+    .intro-area p {
         font-size: 18px;
     }
-    .intro-area h1{
+    .intro-area h1 {
         font-size: 36px;
     }
-    .intro-area h3{
+    .intro-area h3 {
         font-size: 20px;
     }
-    .intro-area ul{
+    .intro-area ul {
         flex-direction: column;
     }
-    .intro-area ul li{
+    .intro-area ul li {
         font-size: 14px;
         margin-left: -15px;
     }
-    .intro-area ul li:before{
+    .intro-area ul li:before {
         display: none;
     }
-    .intro-area ul{
+    .intro-area ul {
         margin-left: 0;
+    }
+    #resume,
+    #about{
+        padding: 10px 10px;
     }
 }
