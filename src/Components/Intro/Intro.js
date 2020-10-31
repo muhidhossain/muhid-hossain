@@ -15,7 +15,7 @@ const Intro = () => {
                     <li>Traveller</li>
                     <li>Programer</li>
                 </ul>
-                <a href="https://github.com//muhidhossain/muhid-hossain/raw/master/src/data/MyResume.pdf" id="raw-url" role="button" class="btn btn-sm BtnGroup-item ">
+                <a href="https://github.com//muhidhossain/muhid-hossain/raw/master/src/data/MyResume.pdf" id="raw-url" role="button" className="btn btn-sm BtnGroup-item ">
                     <Button id='resume'>Get Resume</Button>
                 </a>
                 <a style={{ textDecoration: 'none' }} href="/about">

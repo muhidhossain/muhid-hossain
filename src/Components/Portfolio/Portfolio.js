@@ -30,7 +30,7 @@ const Portfolio = () => {
                     </Card.Footer>
                 </Card>
                 <Card className="card-details">
-                <iframe title='boiwala' width="560" height="315" src="https://www.youtube.com/embed/EfPkARk3RJg" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullullScreen></iframe>
+                <iframe title='boiwala' width="560" height="315" src="https://www.youtube.com/embed/EfPkARk3RJg" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     <Card.Body>
                         <a target="blank" href="https://boii-wala.web.app"><h4>Boiwlal</h4></a>
                         <Card.Text>
