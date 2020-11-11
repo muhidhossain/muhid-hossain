@@ -13,6 +13,23 @@ const Portfolio = () => {
             </div>
             <CardDeck className="portfolios">
                 <Card className="card-details">
+                <iframe title='amazon-clone' width="560" height="315" src="https://www.youtube.com/embed/H5FDb-RkeVw" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <Card.Body>
+                        <a target="blank" href="https://emazon-clone.web.app"><h4>Amazon clone</h4></a>
+                        <Card.Text>
+                        Full-Stack Amazon clone. Developed with React JS, hosted to firebase, accept payment with Stripe.
+                        </Card.Text>
+                    </Card.Body>
+                    <Card.Footer>
+                        <a target="blank" href="https://github.com/muhidhossain/amazon-clone">
+                            <FontAwesomeIcon className="gitIcon" icon={faGithub} />
+                        </a>
+                        <a target="blank" href="https://emazon-clone.web.app">
+                            <FontAwesomeIcon className="linkIcon" icon={faExternalLinkAlt} />
+                        </a>
+                    </Card.Footer>
+                </Card>
+                <Card className="card-details">
                     <iframe title="power-x-gym" width="560" height="315" src="https://www.youtube.com/embed/bzFNgUvB2dQ" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     <Card.Body>
                         <a target="blank" href="https://power--x--gym.web.app"><h4>Power X Gym</h4></a>
@@ -30,7 +47,7 @@ const Portfolio = () => {
                     </Card.Footer>
                 </Card>
                 <Card className="card-details">
-                <iframe title='boiwala' width="560" height="315" src="https://www.youtube.com/embed/EfPkARk3RJg" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe title='boiwala' width="560" height="315" src="https://www.youtube.com/embed/EfPkARk3RJg" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     <Card.Body>
                         <a target="blank" href="https://boii-wala.web.app"><h4>Boiwlal</h4></a>
                         <Card.Text>
@@ -46,6 +63,8 @@ const Portfolio = () => {
                         </a>
                     </Card.Footer>
                 </Card>
+            </CardDeck>
+            <CardDeck className="portfolios">
                 <Card className="card-details">
                     <iframe title="doctors-portal" width="560" height="315" src="https://www.youtube.com/embed/9BWuy9JSA-4" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     <Card.Body>
@@ -63,8 +82,6 @@ const Portfolio = () => {
                         </a>
                     </Card.Footer>
                 </Card>
-            </CardDeck>
-            <CardDeck className="portfolios">
                 <Card className="card-details">
                     <iframe title="red-onion-restaurant" src="https://www.youtube.com/embed/6XGTU6Zzv8k" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     <Card.Body>
@@ -82,8 +99,7 @@ const Portfolio = () => {
                         </a>
                     </Card.Footer>
                 </Card>
-                <Card style={{backgroundColor: "#000f0f"}}></Card>
-                <Card style={{backgroundColor: "#000f0f"}}></Card>
+                <Card style={{ backgroundColor: "#000f0f" }}></Card>
             </CardDeck>
         </div>
     );
