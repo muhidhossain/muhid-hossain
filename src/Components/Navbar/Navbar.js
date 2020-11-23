@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import './Navbar.css'
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedinIn, faMediumM } from '@fortawesome/free-brands-svg-icons';
 import { useScrollTrigger, Slide, AppBar, Toolbar, IconButton, makeStyles, Divider, List, ListItem, Hidden, Drawer, useTheme, Menu, MenuItem } from '@material-ui/core';
+import FullHeight from "react-full-height";
 import MenuIcon from '@material-ui/icons/Menu';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import Logo from '../../images/logo.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedinIn, faMediumM } from '@fortawesome/free-brands-svg-icons';
-import { Link } from 'react-router-dom';
-import FullHeight from "react-full-height";
+import './Navbar.css';
 
 const drawerWidth = 240;
 

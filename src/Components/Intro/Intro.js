@@ -1,6 +1,6 @@
 import React from 'react';
-import './Intro.css';
 import { Button } from '@material-ui/core';
+import './Intro.css';
 
 const Intro = () => {
     return (

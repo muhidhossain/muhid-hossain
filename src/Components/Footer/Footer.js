@@ -1,8 +1,8 @@
 import React from 'react';
-import './Footer.css';
+import { Link } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookSquare, faInstagram, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { Link } from '@material-ui/core';
+import './Footer.css';
 
 const Footer = () => {
     const date = new Date();

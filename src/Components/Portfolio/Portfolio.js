@@ -1,9 +1,9 @@
 import React from 'react';
-import './Portfolio.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { CardDeck, Card } from 'react-bootstrap';
+import './Portfolio.css';
 
 const Portfolio = () => {
     return (
@@ -83,6 +83,23 @@ const Portfolio = () => {
                     </Card.Footer>
                 </Card>
                 <Card className="card-details">
+                <iframe title='airbnb-clone' width="560" height="315" src="https://www.youtube.com/embed/qBLqafo01JE" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <Card.Body>
+                        <a target="blank" href="https://airbnb-clone-challenge.web.app"><h4>Airbnb Clone</h4></a>
+                        <Card.Text>
+                            Front-End clone of Airbnb developed with React JS, Firebase and CSS Flexbox 
+                        </Card.Text>
+                    </Card.Body>
+                    <Card.Footer>
+                        <a target="blank" href="https://github.com/muhidhossain/airbnb-clone">
+                            <FontAwesomeIcon className="gitIcon" icon={faGithub} />
+                        </a>
+                        <a target="blank" href="https://airbnb-clone-challenge.web.app">
+                            <FontAwesomeIcon className="linkIcon" icon={faExternalLinkAlt} />
+                        </a>
+                    </Card.Footer>
+                </Card>
+                <Card className="card-details">
                     <iframe title="red-onion-restaurant" src="https://www.youtube.com/embed/6XGTU6Zzv8k" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     <Card.Body>
                         <a target="blank" href="https://red-onion-food1.web.app"><h4>Red Onion Restaurant</h4></a>
@@ -99,7 +116,6 @@ const Portfolio = () => {
                         </a>
                     </Card.Footer>
                 </Card>
-                <Card style={{ backgroundColor: "#000f0f" }}></Card>
             </CardDeck>
         </div>
     );

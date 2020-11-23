@@ -1,8 +1,8 @@
 import React from 'react';
-import './LoveToDo.css'
+import SportsCricketIcon from '@material-ui/icons/SportsCricket';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlaneDeparture, faCamera, faBiking } from '@fortawesome/free-solid-svg-icons'
-import SportsCricketIcon from '@material-ui/icons/SportsCricket';
+import './LoveToDo.css';
 
 const LoveToDo = () => {
     return (

@@ -1,7 +1,7 @@
 import React from 'react';
-import './About.css';
-import profile from '../../images/profile.jpg';
 import { Button } from '@material-ui/core';
+import profile from '../../images/profile.jpg';
+import './About.css';
 
 const About = () => {
     return (

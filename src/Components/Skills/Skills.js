@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './Skills.css'
-import skills from '../../data/skills'
+import skills from '../../data/skills';
+import './Skills.css';
 
 const Skills = () => {
     const selectedName = Object.keys(skills)
