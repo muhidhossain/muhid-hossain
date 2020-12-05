@@ -1,67 +1,25 @@
-.portfolios{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+.portfolios {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
-.portfolio-area{
-    color: #ffffffe0;
-    margin-bottom: 120px;
+.portfolio-area {
+  color: #ffffffe0;
+  margin-bottom: 120px;
 }
-.portfolio-heading{
-    display: flex;
-    justify-content: center;
+.portfolio-heading {
+  display: flex;
+  justify-content: center;
 }
-.portfolio-heading h4{
-    box-shadow: 2px 2px 5px aqua;
-    padding: 5px 10px;
-    border-radius: 10px;
-    margin-bottom: 120px;
-}
-.card-details{
-    background-color: #1d293a;
-    border-radius: 4px;
-    padding: 0;
-}
-.card-details iframe{
-    height: 200px;
-    width: 100%;
-    border-radius: 4px;
-    filter: grayscale(5);
-    transition: .50s all;
-}
-.card-details:hover iframe{
-    filter: grayscale(0);
-}
-.card-details h4{
-    font-weight: 700;
-}
-.card-details p{
-    font-size: 18px;
-}
-.card-details a{
-    text-decoration: none;
-    color: white;
-}
-.card-details .gitIcon{
-    font-size: 25px;
-}
-.card-details .gitIcon:hover{
-    color: aqua;
-}
-.card-details .linkIcon{
-    font-size: 23px;
-    margin-left: 10px;
-}
-.card-details .linkIcon:hover{
-    color: aqua;
+.portfolio-heading h4 {
+  box-shadow: 2px 2px 5px aqua;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-bottom: 120px;
 }
 
 @media (max-width: 991px) {
-    .portfolios{
-        display: block;
-    }
-
-    .portfolios > .card-details{
-        margin-bottom: 20px;
-    }
+  .portfolios {
+    display: block !important;
+  }
 }

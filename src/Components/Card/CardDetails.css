@@ -1,0 +1,53 @@
+.cardDetails {
+  background-color: #1d293a !important;
+  border-radius: 4px;
+  padding: 0;
+}
+
+.cardDetails > img {
+  height: 200px;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 4px;
+  filter: grayscale(5);
+  transition: 0.5s all;
+}
+
+.cardDetails:hover > img {
+  filter: grayscale(0);
+}
+
+.cardDetails .cardDetails__link {
+  text-decoration: none;
+  color: white;
+}
+
+.cardDetails h4 {
+  font-weight: 700;
+}
+
+.cardDetails p {
+  font-size: 18px;
+}
+
+.cardDetails .gitIcon {
+  font-size: 25px;
+}
+
+.cardDetails .gitIcon:hover {
+  color: aqua;
+}
+
+.cardDetails .linkIcon {
+  font-size: 23px;
+  margin-left: 10px;
+}
+.cardDetails .linkIcon:hover {
+  color: aqua;
+}
+
+@media (max-width: 991px) {
+  .cardDetails {
+    margin-bottom: 20px !important;
+  }
+}

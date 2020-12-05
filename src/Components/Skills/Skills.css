@@ -1,131 +1,132 @@
-.skills-area{
-    color: #ffffffe0;
-    margin-bottom: 180px;
+.skills-area {
+  color: #ffffffe0;
+  margin-bottom: 180px;
 }
-.skills-heading{
-    display: flex;
-    justify-content: center;
+.skills-heading {
+  display: flex;
+  justify-content: center;
 }
-.skills-heading h4{
-    box-shadow: 2px 2px 5px aqua;
-    padding: 5px 10px;
-    border-radius: 10px;
-    margin-bottom: 180px;
+.skills-heading h4 {
+  box-shadow: 2px 2px 5px aqua;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-bottom: 180px;
 }
-.skills{
-    margin-left: 16px;
+.skills {
+  margin-left: 16px;
 }
-.skill-nav{
-    margin-bottom: 25px;
+.skill-nav {
+  margin-bottom: 25px !important;
 }
-.skill-nav li{
-    border: 2px solid aqua;
-    color: rgba(255, 255, 255, 0.85);
-    padding: 5px 25px;
-    margin-right: 15px;
-    cursor: pointer;
-    border-radius: 4px;
+.skill-nav li {
+  border: 2px solid aqua;
+  color: rgba(255, 255, 255, 0.85);
+  padding: 5px 25px;
+  margin-right: 15px;
+  cursor: pointer;
+  border-radius: 4px;
 }
-.skill-nav li:last-child{
-    margin-right: 0;
+.skill-nav li:last-child {
+  margin-right: 0;
 }
-.skill-nav li.active{
-    background-color: aqua;
-    color: black;
-    font-weight: 900;
+.skill-nav li.active {
+  background-color: aqua;
+  color: black;
+  font-weight: 900;
 }
-.skill{
-    display: flex;
-    flex-wrap: wrap;
+.skill {
+  display: flex;
+  flex-wrap: wrap;
 }
-.skill > *{
-    flex: 1 1 calc(100% / 2 - 30px);
+.skill > * {
+  flex: 1 1 calc(100% / 2 - 30px);
 }
-.skill .card{
-    position: relative;
-    background-color: #1d293a;
-    padding: 25px;
-    padding-bottom: 35px;
-    margin: 15px;
-    border-radius: 4px;
+.skill .card {
+  position: relative;
+  background-color: #1d293a;
+  padding: 25px;
+  padding-bottom: 35px;
+  margin: 15px;
+  border-radius: 4px;
 }
-.skill .card h4{
-    font-size: 22px;
-    font-weight: 900;
+.skill .card h4 {
+  font-size: 22px;
+  font-weight: 900;
 }
-.skill .card p{
-    position: absolute;
-    background-color: aqua;
-    padding: 3px 5px;
-    top: 25px;
-    font-weight: 900;
-    color: black;
-    right: 15px;
-    border-radius: 4px;
+.skill .card p {
+  position: absolute;
+  background-color: aqua;
+  padding: 3px 5px;
+  top: 25px;
+  font-weight: 900;
+  color: black;
+  right: 15px;
+  border-radius: 4px;
 }
-.skill .card .progress-ar{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 10px;
-    background-color: aqua;
-    border-radius: 4px;
+.skill .card .progress-ar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  background-color: aqua;
+  border-radius: 4px;
 }
-.skill > *:nth-child(1), .skill > *:nth-child(2){
-    margin-top: 0;
+.skill > *:nth-child(1),
+.skill > *:nth-child(2) {
+  margin-top: 0;
 }
-.skill > *:nth-child(2n-1){
+.skill > *:nth-child(2n-1) {
+  margin-left: 0;
+}
+.skill > *:nth-child(2n) {
+  margin-right: 0;
+}
+.skill > *:last-child {
+  margin-right: 0;
+  flex: 0 0 calc(50% - 15px);
+}
+
+@media only screen and (max-width: 768px) {
+  .skills-area {
+    margin-bottom: 100px;
+  }
+  .skills {
     margin-left: 0;
-}
-.skill > *:nth-child(2n){
-    margin-right: 0;
-}
-.skill > *:last-child{
-    margin-right: 0;
-    flex: 0 0 calc(50% - 15px);
-}
-
-@media only screen and (max-width: 768px){
-    .skills-area{
-        margin-bottom: 100px;
-    }
-    .skills{
-        margin-left: 0;
-    }
-    .skills-heading h4{
-        margin-bottom: 100px;
-    }
-    .skill-nav{
-        justify-content: center;
-    }
-    .skill > *{
-        flex: 1 1 100%;
-    }
-    .skill .card{
-        margin: 0;
-        margin-bottom: 30px;
-    }
-    .skill > *:last-child{
-        flex-basis: 100%;
-        margin-bottom: 0;
-    }
+  }
+  .skills-heading h4 {
+    margin-bottom: 100px;
+  }
+  .skill-nav {
+    justify-content: center;
+  }
+  .skill > * {
+    flex: 1 1 100%;
+  }
+  .skill .card {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .skill > *:last-child {
+    flex-basis: 100%;
+    margin-bottom: 0;
+  }
 }
 
-@media only screen and (max-width: 481px){
-    .skills-area{
-        margin-bottom: 100px;
-    }
-    .skill-nav{
-        margin-bottom: 0;
-    }
-    .skill-nav li{
-        margin: 0 5px;
-        margin-bottom: 15px;
-    }
-    .skill .card{
-        margin-bottom: 15px;
-    }
-    .skills-heading h4{
-        margin-bottom: 100px;
-    }
+@media only screen and (max-width: 481px) {
+  .skills-area {
+    margin-bottom: 100px;
+  }
+  .skill-nav {
+    margin-bottom: 0;
+  }
+  .skill-nav li {
+    margin: 0 5px;
+    margin-bottom: 15px;
+  }
+  .skill .card {
+    margin-bottom: 15px;
+  }
+  .skills-heading h4 {
+    margin-bottom: 100px;
+  }
 }

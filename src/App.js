@@ -1,5 +1,5 @@
 import React from 'react';
-import ScrollToTop from "react-scroll-to-top";
+import ScrollToTop from 'react-scroll-to-top';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import About from './Components/About/About';
 import Skills from './Components/Skills/Skills';
@@ -16,20 +16,23 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className='my-portfolio'>
+    <div className="my-portfolio">
       <Router>
-
         {/* Scroll to top on changing route */}
         <ScrollTop />
 
         {/* scroll to top by clicking on bottom right corner button */}
-        <ScrollToTop smooth color='black' style={{
-          outline: 'none',
-          backgroundColor: 'aqua',
-          height: '30px',
-          width: '30px',
-          fontWeight: '800'
-        }} />
+        <ScrollToTop
+          smooth
+          color="black"
+          style={{
+            outline: 'none',
+            backgroundColor: 'aqua',
+            height: '30px',
+            width: '30px',
+            fontWeight: '800',
+          }}
+        />
 
         <Switch>
           <Route exact path="/">
@@ -43,35 +46,35 @@ function App() {
             <Footer></Footer>
           </Route>
           <Route path="/about">
-            <div style={{ paddingTop: "100px" }}>
+            <div style={{ paddingTop: '100px' }}>
               <Navbar></Navbar>
               <About></About>
               <Footer></Footer>
             </div>
           </Route>
           <Route path="/mySkills">
-            <div style={{ paddingTop: "100px" }}>
+            <div style={{ paddingTop: '100px' }}>
               <Navbar></Navbar>
               <Skills></Skills>
               <Footer></Footer>
             </div>
           </Route>
           <Route path="/loveToDo">
-            <div style={{ paddingTop: "100px" }}>
+            <div style={{ paddingTop: '100px' }}>
               <Navbar></Navbar>
               <LoveToDo></LoveToDo>
               <Footer></Footer>
             </div>
           </Route>
           <Route path="/portfolio">
-            <div style={{ paddingTop: "100px" }}>
+            <div style={{ paddingTop: '100px' }}>
               <Navbar></Navbar>
               <Portfolio></Portfolio>
               <Footer></Footer>
             </div>
           </Route>
           <Route path="/contact">
-            <div style={{ paddingTop: "130px" }}>
+            <div style={{ paddingTop: '130px' }}>
               <Navbar></Navbar>
               <Contact></Contact>
               <Footer></Footer>
@@ -82,7 +85,6 @@ function App() {
           </Route>
         </Switch>
       </Router>
-
     </div>
   );
 }
