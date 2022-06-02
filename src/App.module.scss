@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 
-.my-portfolio {
+.my_portfolio {
   background-color: #000f0f;
   font-family: 'Roboto', sans-serif;
 }
 
-.myPortfolio__scrollToTop {
+button[class^='styles_scroll-to-top__2A70v'] {
   background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

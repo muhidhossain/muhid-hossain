@@ -1,0 +1,152 @@
+.skillsArea {
+  color: #ffffffe0;
+  padding-top: 100px;
+
+  .skills__heading {
+    display: flex;
+    justify-content: center;
+
+    h4 {
+      box-shadow: 2px 2px 5px aqua;
+      padding: 5px 10px;
+      border-radius: 10px;
+      margin-bottom: 80px;
+    }
+  }
+
+  .skills {
+    margin-left: 16px;
+
+    .skills__nav {
+      margin-bottom: 25px !important;
+
+      li {
+        border: 2px solid aqua;
+        color: rgba(255, 255, 255, 0.85);
+        padding: 5px 25px;
+        margin-right: 15px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+
+      li:last-child {
+        margin-right: 0;
+      }
+
+      li[class^='active'] {
+        background-color: aqua;
+        color: black;
+        font-weight: 900;
+      }
+    }
+  }
+
+  .skill {
+    display: flex;
+    column-gap: 30px;
+    row-gap: 30px;
+    padding: 0 15px;
+    flex-wrap: wrap;
+
+    > * {
+      flex: 1 1 calc(100% / 2 - 30px);
+    }
+
+    > *:nth-child(1),
+    > *:nth-child(2) {
+      margin-top: 0;
+    }
+
+    > *:nth-child(2n-1) {
+      margin-left: 0;
+    }
+
+    > *:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    > *:last-child {
+      margin-right: 0;
+      flex: 0 0 calc(50% - 15px);
+    }
+
+    .card {
+      position: relative;
+      background-color: #1d293a;
+      padding: 25px;
+      padding-bottom: 35px;
+      border-radius: 4px;
+
+      h4 {
+        font-size: 22px;
+        font-weight: 900;
+      }
+
+      p {
+        position: absolute;
+        background-color: aqua;
+        padding: 3px 5px;
+        top: 25px;
+        font-weight: 900;
+        color: black;
+        right: 15px;
+        border-radius: 4px;
+      }
+
+      .progress__ar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 10px;
+        background-color: aqua;
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .skillsArea {
+    .skills-heading {
+      h4 {
+        margin-bottom: 100px;
+      }
+    }
+
+    .skills {
+      margin-left: 0;
+      .skill__nav {
+        justify-content: center;
+      }
+    }
+
+    .skill {
+      padding: 0;
+
+      > * {
+        flex: 1 1 100%;
+      }
+
+      > *:last-child {
+        flex-basis: 100%;
+        margin-bottom: 0;
+      }
+
+      .card {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .skillsArea {
+    margin-bottom: 100px;
+
+    .skills-heading {
+      h4 {
+        margin-bottom: 100px;
+      }
+    }
+  }
+}

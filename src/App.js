@@ -11,12 +11,12 @@ import Navbar from './Components/Navbar/Navbar';
 import Intro from './Components/Intro/Intro';
 import NotFound from './Components/NotFound/NotFound';
 import ScrollTop from './Components/ScrollTop/ScrollTop';
-import './App.css';
+import styles from './App.module.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="my-portfolio">
+    <div className={styles.my_portfolio}>
       <Router>
         {/* Scroll to top on changing route */}
         <ScrollTop />
@@ -36,49 +36,14 @@ function App() {
 
         <Switch>
           <Route exact path="/">
-            <Navbar></Navbar>
-            <Intro></Intro>
-            <About></About>
-            <Skills></Skills>
-            <LoveToDo></LoveToDo>
-            <Portfolio></Portfolio>
-            <Contact></Contact>
-            <Footer></Footer>
-          </Route>
-          <Route path="/about">
-            <div style={{ paddingTop: '100px' }}>
-              <Navbar></Navbar>
-              <About></About>
-              <Footer></Footer>
-            </div>
-          </Route>
-          <Route path="/mySkills">
-            <div style={{ paddingTop: '100px' }}>
-              <Navbar></Navbar>
-              <Skills></Skills>
-              <Footer></Footer>
-            </div>
-          </Route>
-          <Route path="/loveToDo">
-            <div style={{ paddingTop: '100px' }}>
-              <Navbar></Navbar>
-              <LoveToDo></LoveToDo>
-              <Footer></Footer>
-            </div>
-          </Route>
-          <Route path="/portfolio">
-            <div style={{ paddingTop: '100px' }}>
-              <Navbar></Navbar>
-              <Portfolio></Portfolio>
-              <Footer></Footer>
-            </div>
-          </Route>
-          <Route path="/contact">
-            <div style={{ paddingTop: '130px' }}>
-              <Navbar></Navbar>
-              <Contact></Contact>
-              <Footer></Footer>
-            </div>
+            <Navbar />
+            <Intro />
+            <About />
+            <Skills />
+            <Portfolio />
+            <LoveToDo />
+            <Contact />
+            <Footer />
           </Route>
           <Route path="*">
             <NotFound></NotFound>
