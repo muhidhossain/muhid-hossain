@@ -1,0 +1,25 @@
+.notFound {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000f0f;
+  text-align: center;
+  height: 100vh;
+
+  h1 {
+    font-size: 6rem;
+    font-weight: 900;
+    color: aqua;
+    margin: 0;
+  }
+
+  h2 {
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+  p {
+    font-weight: 700;
+    color: gray;
+  }
+}

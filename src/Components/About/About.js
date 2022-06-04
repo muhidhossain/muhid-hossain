@@ -26,7 +26,7 @@ const About = () => {
             >
               <Button className={styles.resumeBtn}>Get Resume</Button>
             </a>
-            <a className={styles.skill} href="mySkills">
+            <a className={styles.skill} href="#mySkills">
               <Button className={styles.skillBtn}>My Skills</Button>
             </a>
           </div>

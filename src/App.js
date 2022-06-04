@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import About from './Components/About/About';
 import Skills from './Components/Skills/Skills';
 import LoveToDo from './Components/LoveToDo/LoveToDo';
-import Portfolio from './Components/Portfolio/Portfolio';
+import Projects from './Components/Projects/Projects';
 import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 import Navbar from './Components/Navbar/Navbar';
@@ -40,7 +40,7 @@ function App() {
             <Intro />
             <About />
             <Skills />
-            <Portfolio />
+            <Projects />
             <LoveToDo />
             <Contact />
             <Footer />

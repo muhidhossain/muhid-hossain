@@ -1,21 +1,21 @@
-import React from "react";
-import { CardDeck } from "react-bootstrap";
-import CardDetails from "../Card/CardDetails";
-import amazonImg from "../../images/portfolio/amazon-clone.png";
-import powerXImg from "../../images/portfolio/power-x-gym.jpg";
-import boiwalaImg from "../../images/portfolio/boiwala.png";
+import React from 'react';
+import { CardDeck } from 'react-bootstrap';
+import CardDetails from '../Card/CardDetails';
+import amazonImg from '../../images/portfolio/amazon-clone.png';
+import powerXImg from '../../images/portfolio/power-x-gym.jpg';
+import boiwalaImg from '../../images/portfolio/boiwala.png';
 import doctorsPortalImg from "../../images/portfolio/doctor's-portal.jpg";
-import airbnbCloneImg from "../../images/portfolio/airbnb-clone.png";
-import redOnionImg from "../../images/portfolio/red-onion.png";
-import "./Portfolio.css";
+import airbnbCloneImg from '../../images/portfolio/airbnb-clone.png';
+import redOnionImg from '../../images/portfolio/red-onion.png';
+import styles from './Projects.module.scss';
 
-const Portfolio = () => {
+const Projects = () => {
   return (
-    <div className="container portfolio-area">
-      <div className="portfolio-heading">
-        <h4>PORTFOLIO</h4>
+    <div className={`container ${styles.projects}`} id="projects">
+      <div className={styles.projects__heading}>
+        <h4>PROJECTS</h4>
       </div>
-      <CardDeck className="portfolios">
+      <CardDeck className={styles.projects__project}>
         <CardDetails
           image={amazonImg}
           title="Amazon clone"
@@ -41,7 +41,7 @@ const Portfolio = () => {
           git="https://github.com/muhidhossain/boiwala"
         />
       </CardDeck>
-      <CardDeck className="portfolios">
+      <CardDeck className={styles.projects__project}>
         <CardDetails
           image={doctorsPortalImg}
           title="Doctor's Portal"
@@ -71,4 +71,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Projects;

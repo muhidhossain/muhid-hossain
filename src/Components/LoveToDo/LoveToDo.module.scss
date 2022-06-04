@@ -1,0 +1,78 @@
+.loveToDo {
+  color: #ffffffe0;
+  padding-top: 100px;
+  padding-bottom: 80px;
+
+  .loveToDo__heading {
+    display: flex;
+    justify-content: center;
+
+    h4 {
+      box-shadow: 2px 2px 5px aqua;
+      padding: 5px 10px;
+      border-radius: 10px;
+      margin-bottom: 180px;
+    }
+  }
+
+  .loveToDo__details {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    span {
+      font-size: 100px;
+    }
+
+    h4 {
+      font-weight: 900;
+    }
+
+    > * {
+      flex: 1 1 calc(100% / 4 - 30px);
+      text-align: center;
+      height: 300px;
+      width: 300px;
+      padding: 40px;
+      margin: 10px;
+      background-color: #1d293a;
+      border-radius: 4px;
+      color: aqua;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .loveToDo {
+    h4 {
+      margin-bottom: 100px;
+    }
+
+    .loveToDo__details {
+      > * {
+        flex: 1 1 calc(100% / 2 - 30px);
+      }
+
+      > *:nth-child(2n-1) {
+        margin-left: 0;
+      }
+
+      > *:nth-child(2n-2) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .loveToDo {
+    .loveToDo__details {
+      > * {
+        flex-basis: 100%;
+        margin: 0;
+        margin-bottom: 15px;
+        align-items: center;
+      }
+    }
+  }
+}

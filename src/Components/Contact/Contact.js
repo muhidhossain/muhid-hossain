@@ -1,91 +1,124 @@
 import React from 'react';
-import emailjs from 'emailjs-com';
-import './Contact.css';
+import styles from './Contact.module.scss';
+import emailjs from '@emailjs/browser';
 import { useForm } from 'react-hook-form';
+import { IconButton, Snackbar } from '@material-ui/core';
+import CloseIcon from '@material-ui/icons/Close';
 
 const YOUR_SERVICE_ID = process.env.REACT_APP_YOUR_SERVICE_ID;
 const YOUR_TEMPLATE_ID = process.env.REACT_APP_YOUR_TEMPLATE_ID;
 const YOUR_USER_ID = process.env.REACT_APP_YOUR_USER_ID;
 
 const Contact = () => {
-  const { register, handleSubmit, errors } = useForm();
+  const [open, setOpen] = React.useState({ open: false, message: '' });
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm();
 
-  const onMouseOver = (data) => {
-    console.log(data);
+  const onSubmit = (data) => {
+    emailjs.send(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, data, YOUR_USER_ID).then(
+      (res) => {
+        setOpen((prevState) => ({
+          ...prevState,
+          open: true,
+          message: 'Message sent successfully',
+        }));
+        reset();
+      },
+      (err) => {
+        setOpen((prevState) => ({
+          ...prevState,
+          open: true,
+          message: 'Something went wrong',
+        }));
+      }
+    );
   };
 
-  const preventDefault = (e) => {
-    e.preventDefault();
-  };
-
-  // Function for sending email
-  const sendEmail = (e) => {
-    if (Object.keys(errors).length === 0) {
-      e.preventDefault();
-      emailjs
-        .sendForm(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, e.target, YOUR_USER_ID)
-        .then(
-          (result) => {
-            console.log(result.text);
-          },
-          (error) => {
-            console.log(error);
-          }
-        );
-      e.target.reset();
-    } else {
-      console.log('error');
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
     }
+
+    setOpen(false);
   };
 
   return (
-    <div className="container contact-area">
-      <div className="contact-heading">
+    <div className={`container ${styles.contact}`} id="contact">
+      <div className={styles.contact__heading}>
         <h4>CONTACT</h4>
       </div>
       <div>
         <form
-          className="contact-form"
-          onSubmit={
-            Object.keys(errors).length === 0 ? sendEmail : preventDefault
-          }
+          className={styles.contact__form}
+          onSubmit={handleSubmit(onSubmit)}
         >
           <div>
             <label>Name</label>
-            {errors.user_name && <span>Name is required*</span>}
+            {errors.user_name?.type === 'required' && (
+              <span>Name is required</span>
+            )}
+            {errors.user_name?.type === 'minLength' && (
+              <span>Name must be at least three characters long</span>
+            )}
           </div>
           <input
             type="text"
-            name="user_name"
-            ref={register({ required: true })}
+            {...register('user_name', { required: true, minLength: 3 })}
           />
           <div>
             <label>Email</label>
-            {errors.user_email && <span>Enter a valid email*</span>}
+            {errors.user_email?.type === 'required' && (
+              <span>Email is required</span>
+            )}
+            {errors.user_email?.type === 'pattern' && (
+              <span>Enter a valid email</span>
+            )}
           </div>
           <input
             type="email"
-            name="user_email"
-            ref={register({
+            {...register('user_email', {
               required: true,
-              pattern: /(.+)@(.+){2,}\.(.+){2,}/,
+              pattern: /^\w+([\\.-]?\w+)*@\w+([\\.-]?\w+)*(\.\w{2,3})+$/,
             })}
           />
-
           <div>
             <label>Message</label>
-            {errors.message && <span>Kindly write your message*</span>}
+            {errors.message?.type === 'required' && (
+              <span>Message is required</span>
+            )}
           </div>
-          <textarea name="message" ref={register({ required: true })} />
+          <textarea {...register('message', { required: true })} />
           <div>
-            <input
-              type="submit"
-              value="Send"
-              onMouseOver={handleSubmit(onMouseOver)}
-            />
+            <input type="submit" value="Send" />
           </div>
         </form>
       </div>
+      <Snackbar
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'right',
+        }}
+        open={open.open}
+        autoHideDuration={6000}
+        onClose={handleClose}
+        message={open?.message}
+        action={
+          <React.Fragment>
+            <IconButton
+              size="small"
+              aria-label="close"
+              color="inherit"
+              onClick={handleClose}
+            >
+              <CloseIcon fontSize="small" />
+            </IconButton>
+          </React.Fragment>
+        }
+      />
     </div>
   );
 };

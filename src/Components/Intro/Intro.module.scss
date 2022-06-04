@@ -72,7 +72,34 @@
     }
   }
 
+  .intro__social {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+
+    a {
+      display: flex;
+    }
+
+    > * {
+      font-size: 40px;
+      color: white;
+      transition: 0.5s;
+
+      &:hover {
+        color: aqua;
+      }
+
+      > img {
+        height: 40px;
+      }
+    }
+  }
+
   .resume {
+    text-decoration: none;
+
     .resumeBtn {
       background-color: aqua;
       padding: 10px 20px;
@@ -86,6 +113,8 @@
   }
 
   .about {
+    text-decoration: none;
+
     .aboutBtn {
       background-color: #000f0f;
       color: aqua;
@@ -130,6 +159,22 @@
 
       li {
         font-size: 16px;
+      }
+    }
+
+    .intro__social {
+      justify-content: center;
+
+      > * {
+        font-size: 30px;
+
+        &:hover {
+          color: aqua;
+        }
+
+        > img {
+          height: 30px;
+        }
       }
     }
 
