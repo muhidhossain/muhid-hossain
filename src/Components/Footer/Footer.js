@@ -7,11 +7,8 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import styles from './Footer.module.scss';
 import leetCodeLogo from '../../images/LeetCode.png';
-import { Copyright } from '@material-ui/icons';
 
 const Footer = () => {
-  const year = new Date().getFullYear();
-
   return (
     <>
       <div className={styles.footer}>
