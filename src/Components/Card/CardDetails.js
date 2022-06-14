@@ -10,16 +10,31 @@ const CardDetails = ({ image, title, details, liveWebsite, git }) => {
     <Card className="cardDetails">
       <img src={image} alt="" />
       <Card.Body>
-        <a className="cardDetails__link" target="blank" href={liveWebsite}>
+        <a
+          className="cardDetails__link"
+          target="_blank"
+          href={liveWebsite}
+          rel="noreferrer"
+        >
           <h4>{title}</h4>
         </a>
         <Card.Text>{details}</Card.Text>
       </Card.Body>
       <Card.Footer>
-        <a className="cardDetails__link" target="blank" href={git}>
+        <a
+          className="cardDetails__link"
+          target="_blank"
+          href={git}
+          rel="noreferrer"
+        >
           <FontAwesomeIcon className="gitIcon" icon={faGithub} />
         </a>
-        <a className="cardDetails__link" target="blank" href={liveWebsite}>
+        <a
+          className="cardDetails__link"
+          target="_blank"
+          href={liveWebsite}
+          rel="noreferrer"
+        >
           <FontAwesomeIcon className="linkIcon" icon={faExternalLinkAlt} />
         </a>
       </Card.Footer>
