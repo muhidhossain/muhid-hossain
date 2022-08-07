@@ -4,6 +4,7 @@ const skills = {
     { name: 'TypeScript', percent: 80 },
     { name: 'React JS', percent: 80 },
     { name: 'Next JS', percent: 80 },
+    { name: 'Angular', percent: 60 },
     { name: 'Redux', percent: 70 },
     { name: 'Tailwind CSS', percent: 80 },
     { name: 'Sass', percent: 90 },
