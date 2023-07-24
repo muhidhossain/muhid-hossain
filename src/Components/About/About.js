@@ -13,22 +13,23 @@ const About = () => {
         <div className={styles.about__profile}>
           <div className="col-md-6">
             <p>
-              Hello! I am Muhid Hossain Peal, a self taught Front-end Developer.
-              My core skill is based on JavaScript and love to work with it.
-              Currently completing my bachelor’s degree in Geology and Mining
-              from University of Barishal.
+              A self-taught Software Developer, looking for opportunities.
+              JavaScript | TypeScript | React | Angular | React Native |
+              Undergraduate Student - Geology
             </p>
-            <a
-              href="https://github.com//muhidhossain/muhid-hossain/raw/master/src/data/Muhid_Hossain_Peal_Resume.pdf"
-              id="raw-url"
-              role="button"
-              className={styles.resume}
-            >
-              <Button className={styles.resumeBtn}>Get Resume</Button>
-            </a>
-            <a className={styles.skill} href="#mySkills">
-              <Button className={styles.skillBtn}>My Skills</Button>
-            </a>
+            <div>
+              <a
+                href="https://github.com//muhidhossain/muhid-hossain/raw/master/src/data/Muhid_Hossain_Peal_Resume.pdf"
+                id="raw-url"
+                role="button"
+                className={styles.resume}
+              >
+                <Button className={styles.resumeBtn}>Get Resume</Button>
+              </a>
+              <a className={styles.skill} href="#mySkills">
+                <Button className={styles.skillBtn}>My Skills</Button>
+              </a>
+            </div>
           </div>
           <div className={`col-md-6 ${styles.profile}`}>
             <img src={profile} alt="" />

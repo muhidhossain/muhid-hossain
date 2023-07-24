@@ -19,6 +19,12 @@
   .about__profile {
     display: flex;
 
+    > div:first-child {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
     p {
       font-size: 18px;
       line-height: 2;
