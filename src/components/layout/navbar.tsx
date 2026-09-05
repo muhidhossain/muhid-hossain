@@ -47,7 +47,7 @@ export function Navbar() {
           </span>
         </a>
 
-        <div className="hidden items-center gap-8 md:flex">
+        <div className="hidden items-center gap-6 lg:flex xl:gap-8">
           {links.map((link) => (
             <a
               key={link.href}
@@ -60,7 +60,7 @@ export function Navbar() {
           ))}
         </div>
 
-        <div className="hidden items-center gap-3 md:flex">
+        <div className="hidden items-center gap-3 lg:flex">
           <ThemeToggle />
           <a
             href={profile.resumeUrl}
@@ -72,7 +72,7 @@ export function Navbar() {
           </a>
         </div>
 
-        <div className="flex items-center gap-2 md:hidden">
+        <div className="flex items-center gap-2 lg:hidden">
           <ThemeToggle />
           <button
             type="button"
@@ -104,8 +104,7 @@ export function Navbar() {
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="overflow-hidden border-t border-line bg-surface md:hidden"
-          >
+            className="overflow-hidden border-t border-line bg-surface lg:hidden">
             <div className="flex flex-col gap-4 px-6 pb-6 pt-4">
               {links.map((link) => (
                 <a
