@@ -1,50 +1,31 @@
 {
-  "name": "my-portfolio",
-  "version": "0.1.0",
+  "name": "muhid-hossain-portfolio",
+  "version": "1.0.0",
   "private": true,
-  "dependencies": {
-    "@emailjs/browser": "^3.6.2",
-    "@fortawesome/fontawesome-svg-core": "^1.2.32",
-    "@fortawesome/free-brands-svg-icons": "^5.15.1",
-    "@fortawesome/free-solid-svg-icons": "^5.15.1",
-    "@fortawesome/react-fontawesome": "^0.1.12",
-    "@material-ui/core": "^4.11.0",
-    "@material-ui/icons": "^4.9.1",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "bootstrap": "^4.5.3",
-    "node-sass": "^7.0.1",
-    "react": "^16.14.0",
-    "react-bootstrap": "^1.4.0",
-    "react-dom": "^16.14.0",
-    "react-full-height": "^1.2.2",
-    "react-hook-form": "^7.31.3",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "5.0.1",
-    "react-scroll-to-top": "^1.0.5",
-    "sass": "^1.52.1"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "cleanBuild": "rimraf ./build/*",
-    "build": "npm run cleanBuild && set \"GENERATE_SOURCEMAP=false\" && react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "serve out -l 3000",
+    "lint": "next lint"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "dependencies": {
+    "framer-motion": "^11.11.17",
+    "lucide-react": "^0.454.0",
+    "next": "^14.2.15",
+    "next-themes": "^0.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@types/node": "^20.16.11",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^14.2.15",
+    "postcss": "^8.4.47",
+    "serve": "^14.2.6",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.6.3"
   }
 }
