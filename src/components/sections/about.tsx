@@ -5,7 +5,7 @@ import { SectionHeading } from '@/components/sections/section-heading';
 import { FadeIn, Stagger, StaggerItem } from '@/components/motion/reveal';
 
 const stats = [
-  { label: 'Years experience', value: '4+' },
+  { label: 'Years experience', value: '5+' },
   { label: 'Companies', value: '4' },
   { label: 'Core stack', value: 'React / RN / Next.js' },
 ];
