@@ -43,9 +43,9 @@ export const metadata: Metadata = {
     locale: 'en_US',
     images: [
       {
-        url: '/images/profile.png',
-        width: 1000,
-        height: 1000,
+        url: '/images/profile-og.jpg',
+        width: 1200,
+        height: 1200,
         alt: profile.name,
       },
     ],
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: 'summary',
     title,
     description,
-    images: ['/images/profile.png'],
+    images: ['/images/profile-og.jpg'],
   },
   robots: {
     index: true,
