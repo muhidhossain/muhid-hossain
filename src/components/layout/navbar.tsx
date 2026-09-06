@@ -100,11 +100,11 @@ export function Navbar() {
         {open && (
           <motion.div
             key="mobile-menu"
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: 'auto', opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="overflow-hidden border-t border-line bg-surface lg:hidden">
+            initial={{ opacity: 0, y: -8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
+            className="absolute inset-x-0 top-full overflow-hidden border-t border-line bg-surface shadow-lg lg:hidden">
             <div className="flex flex-col gap-4 px-6 pb-6 pt-4">
               {links.map((link) => (
                 <a
