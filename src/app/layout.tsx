@@ -41,20 +41,11 @@ export const metadata: Metadata = {
     title,
     description,
     locale: 'en_US',
-    images: [
-      {
-        url: '/images/profile-og.jpg',
-        width: 1200,
-        height: 1200,
-        alt: profile.name,
-      },
-    ],
   },
   twitter: {
-    card: 'summary',
+    card: 'summary_large_image',
     title,
     description,
-    images: ['/images/profile-og.jpg'],
   },
   robots: {
     index: true,
